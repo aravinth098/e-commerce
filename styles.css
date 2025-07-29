@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0px auto;
+}
+
+header {
+  background-color: rgb(255, 197, 6);
+}
+
+body ,html {
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+  
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+
+    color: #750085;
+    cursor: pointer;
+}
+
+.header-wrap nav {
+    display: flex;
+    gap: 30px;
+   
+}
+
+.header-wrap nav a {
+    color: #750085;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.header-wrap nav a:hover {
+    color:white;
+}
+
+.text-br {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+  
+}
+
+.banner-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-wrap h1 {
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.banner-wrap p {
+    margin: 30px 0;
+    color: #505050;
+    line-height: 30px;
+}
+
+.btn {
+    display: flex;
+    gap: 30px;
+}
+
+.banner {
+    padding: 100px 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.button {
+    background-color: rgb(255, 173, 9);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #750085;
+    color: white;
+}
+
+.text {
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.text:hover {
+    color: #750085;
+}
+
+.jobs {
+    padding: 40px 0;
+}
+
+.jobs h2 {
+    margin-bottom: 30px;
+}
+
+.jobs-wrap {
+    display: flex;
+    gap: 30px;
+    color: white;
+   
+}
+
+.one>div{
+    text-align: center;
+    width:350px ;
+}
+
+
+.two>div{
+    text-align: center;
+      width:350px ;
+ 
+}
+
+
+.three>div{
+    text-align: center;
+      width:350px ;
+}
+
+ .q{
+    text-align: center ;
+    padding: 20px;
+    color: black;
+ 
+}
+.h{
+    padding: 50px;
+    background-color: rgb(255, 197, 6);
+     text-align: center ;
+    color: #750085;
+}
+h3,h4{
+    padding: 20px;
+}
+
+
+
+.jobs-wrap > div > div>a {
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    
+
+}
+
+.jobs-wrap > div > div a:hover {
+    background-color: orange;
+    color: black;
+}
+
+.jobs-wrap .one {
+    background-color: #499ec3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:black;
+    
+    
+    
+   
+}
+
+
+
+.jobs-wrap .one:hover{
+    background-color:  rgb(0, 213, 255);
+    transition: 0.7s;
+}
+.jobs-wrap .two:hover{
+    background-color:  rgb(0, 213, 255);
+       transition: 0.7s;
+
+}
+.jobs-wrap .three:hover{
+    background-color:  rgb(0, 213, 255);
+     transition: 0.7s;
+
+
+}
+
+.jobs-wrap .two {
+
+    background-color:#499ec3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.jobs-wrap .three {
+    background-color:#499ec3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    padding: 20px 0;
+    background-color: gray;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    
+}
+
+
+
+
+.text-br >span{
+    color: #750085;
+}
+
+
+.end{
+    margin-top: 20px;
+    background-color: rgb(255, 173, 9);
+    width: 100%;
+    height: 65px;
+
+}
+
+.end .thanks{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .header-wrap {
+        flex-direction: column;
+        text-align: center;
+        gap:15px
+
+    }   
+    .header-wrap nav {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+    
+    }
+
+    .text-br {
+        display: inline;
+    }
+}
+@media only screen and (min-width:1000px){
+    .banner-wrap h1 {
+    font-size: 48px;
+}
+
+}
+@media only screen and (max-width: 1109px) {
+    .banner-wrap {
+        flex-direction: column;
+        text-align: center;
+    }
+.btn {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.jobs-wrap{
+    flex-wrap: wrap;
+    justify-content: center;
+ 
+}
+
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.one,
+.two,
+.three {
+  opacity: 0;
+  transform: translateX(-100px);
+  animation: appear 1s ease-in-out forwards;
+  animation-play-state: paused;
+}
+
+@keyframes zoom-in {
+  0% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+.one img:hover,
+.two img:hover,
+.three img:hover {
+  animation: zoom-in 0.3s ease forwards;
+}
+
+/* Popup overlay styles */
+#popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+/* Popup box */
+.popup {
+  background: white;
+  max-width: 800px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  animation: popupFade 0.5s ease;
+}
+
+/* Close button */
+#close-popup {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.popup-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup-image {
+  flex: 1;
+}
+
+.popup-text {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-text h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-text p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.popup-text input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup-text button {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Animation */
+@keyframes popupFade {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

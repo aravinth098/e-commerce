@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google Sign-In API -->
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <div class="square">
+    <i style="--clr:#00ff0a;"></i>
+    <i style="--clr:#ff0057;"></i>
+    <i style="--clr:#fffd44;"></i>
+
+    <div class="login">
+      <h2>Login</h2>
+      <div class="inputBx">
+        <input type="text" placeholder="Username" />
+      </div>
+      <div class="inputBx">
+        <input type="password" placeholder="Password" />
+      </div>
+      <div class="inputBx">
+        <input type="submit" value="Sign in" />
+      </div>
+      <div class="links">
+        <a href="./signup.html">Forget Password</a>
+        <a href="./signup.html">Signup</a>
+      </div>
+
+      <!-- Google Sign-In Button -->
+      <div id="g_id_onload"
+           data-client_id="226937314799-g7q5mic9vqclsbk49jrkjtcslu5ktpq4.apps.googleusercontent.com"
+           data-context="signin"
+           data-ux_mode="popup"
+           data-callback="handleCredentialResponse"
+           data-auto_prompt="false">
+      </div>
+
+      <div class="g_id_signin"
+           data-type="standard"
+           data-shape="rectangular"
+           data-theme="outline"
+           data-text="signin_with"
+           data-size="large"
+           data-logo_alignment="left">
+      </div>
+    </div>
+  </div>
+
+  <script src="./login.js"></script>
+
+
+
+
+</body>
+</html>
